@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+.seymour-one-regular {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: ghostwhite;
+    color: black;
+}
+
+h2, h3 {
+    color: #1e3a8a;
+}
+
+header {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.header-content {
+    z-index: 1;
+    font-size: 32pt;
+    color:floralwhite
+}
+
+nav {
+    background-color: #bfdbfe;
+    border: 2px solid #93c5fd;
+    padding: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.blue-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #93c5fd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(100, 150, 255, 0.15);
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        transform 0.15s,
+        box-shadow 0.2s;
+}
+
+.blue-button:hover {
+    background-color: #bfdbfe;
+    color: #0f172a;
+    box-shadow: 0 6px 14px rgba(100, 150, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.blue-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(100, 150, 255, 0.2);
+}
+
+.layout {
+    display: flex;
+    min-height: 500px;
+}
+
+aside {
+    width: 25vw;
+    background-color: ghostwhite;
+    padding: 20px;
+}
+
+.outer-list,
+.inner-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.outer-list {
+    width: 20vw;
+    background-color: #dbeafe;
+    border: 2px solid #93c5fd;
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.outer-list>li>a {
+    display: block;
+    padding: 14px 20px;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-bottom: 1px solid #bfdbfe;
+    font-weight: bold;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.outer-list>li>a:hover {
+    background-color: #bfdbfe;
+    color: #0f172a;
+}
+
+.inner-list {
+    background-color: #eff6ff;
+}
+
+.inner-list li a {
+    display: block;
+    padding: 12px 40px;
+    color: #334155;
+    text-decoration: none;
+    border-bottom: 1px solid #dbeafe;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.inner-list li a:hover {
+    background-color: #dbeafe;
+    color: #0f172a;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: ghostwhite;
+}
+
+article {
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 4px solid cornflowerblue;
+    background-color: aliceblue;
+    color: #334155;
+}
+
+.articles {
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content img {
+    width: 20vw;
+}
+
+#mus-info {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+#mus-info figure {
+    margin: 0;
+}
+
+figure {
+    width: 25vw;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #eff6ff;
+    border: 2px solid #93c5fd;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(100, 150, 255, 0.15);
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #bfdbfe;
+}
+
+figure iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #bfdbfe;
+}
+
+figcaption {
+    margin-top: 12px;
+    padding: 8px;
+    color: #1e3a8a;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #dbeafe;
+    border-radius: 8px;
+}
+
+.fig-title {
+    text-align: center;
+}
+
+.fig-desc {
+   text-align: left; 
+}
+
+#mus-inside, #mus-map {
+    width: 30vw;
+}
+
+footer {
+    background-color: #bfdbfe;
+    border: 2px solid #93c5fd;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+    text-align: left;
+}

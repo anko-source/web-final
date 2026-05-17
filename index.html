@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <title>Практична №15</title>
+</head>
+
+<body>
+    <header>
+        <video autoplay muted loop playsinline>
+            <source src="img/jelly-video-comp-trim.mp4" type="video/mp4">
+        </video>
+        <h1 class="header-content seymour-one-regular ">Енциклопедія медуз</h1>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a class="blue-button" href="#main-page">Основна сторінка</a></li>
+            <li><a class="blue-button" href="#contacts">Контакти</a></li>
+            <li style="margin-left: auto;"><button id="openForm" class="blue-button">Реєстрація</button></li>
+        </ul>
+    </nav>
+
+    <div class="layout">
+        <aside>
+            <h2>Навігація</h2>
+            <ul class="outer-list">
+                <li><a href="#gen-info">Загальна інформація</a></li>
+                <li class="inner-list-enter">
+                    <ul class="inner-list">
+                        <li><a href="#gen-info-1">Хто такі медузи?</a></li>
+                        <li><a href="#gen-info-2">Де вони проживають?</a></li>
+                        <li><a href="#gen-info-3">Чим вони харчується?</a></li>
+                    </ul>
+                </li>
+                <li><a href="#trivia">Особливості</a></li>
+                <li class="inner-list-enter">
+                    <ul class="inner-list">
+                        <li><a href="#trivia-1">Отруйність</a></li>
+                        <li><a href="#trivia-2">Життєвий цикл</a></li>
+                        <li><a href="#trivia-3">Використання людьми</a></li>
+                    </ul>
+                </li>
+                <li><a href="#mus-info">Медузи в Україні</a></li>
+            </ul>
+        </aside>
+
+        <main id="main-page">
+            <section id="gen-info">
+                <h2>Загальна інформація</h2>
+                <div class="content">
+                    <div class="articles">
+                        <article id="gen-info-1">
+                            <h3>Хто такі медузи?</h3>
+                            <p>
+                                Меду́зи (Medusozoa) — підтип вільноплавних
+                                морських тварин типу кнідарії, які мають
+                                драглисте тіло, що складається з шапки у
+                                формі парасолі та тягучих помацків. До
+                                підтипу належать класи Сцифоїдних (понад 200
+                                видів), Ставромедуз (близько 50 видів),
+                                Кубомедуз (близько 20 видів) і Гідроїдних
+                                (близько 1000—1500 видів).
+                            </p>
+                        </article>
+
+                        <article id="gen-info-2">
+                            <h3>Де вони проживають?</h3>
+                            <p>
+                                Більшість медуз — це морські тварини, хоча
+                                деякі гідромедузи мешкають у прісних водах.
+                                Найвідомішим прикладом прісноводної медузи є
+                                космополітична гідрозоїдна медуза
+                                Craspedacusta sowerbii. Її діаметр не
+                                перевищує 2,5 см, вона безбарвна і не
+                                жалить. Деякі популяції медуз стали
+                                обмеженими прибережними солоними озерами,
+                                такими як Озеро медуз у Палау.
+                            </p>
+                        </article>
+
+                        <article id="gen-info-3">
+                            <h3>Чим вони харчується?</h3>
+                            <p>
+                                Медузи, як і інші кнідарії, зазвичай є
+                                хижаками (або паразитами), харчуючись
+                                планктонними організмами, ракоподібними,
+                                дрібною рибою, ікрою та личинками риб, а
+                                також іншими медузами, при цьому поглинаючи
+                                їжу та виводячи неперетравлені відходи через
+                                рот. Вони полюють пасивно, використовуючи
+                                свої щупальця як дрейфуючі лінії, або
+                                опускаються у воду з широко розправленими
+                                щупальцями; щупальця, що містять нематоцисти
+                                для оглушення або вбивства здобичі, можуть
+                                потім згинатися, щоб допомогти піднести її
+                                до рота. Їхня техніка плавання також
+                                допомагає їм захоплювати здобич; коли їхній
+                                дзвін розширюється, він всмоктує воду, що
+                                приносить більше потенційної здобичі в зону
+                                досяжності щупалець.
+                            </p>
+                        </article>
+                    </div>
+                    <div>
+                        <figure id="map">
+                            <figcaption class="fig-title">Ареал проживання медуз</figcaption>
+                            <img src="img/map.jpg" />
+                            <figcaption class="fig-desc">
+                                <span style="color: red;">&#x25A0;</span> Приріст популяції
+                                <br> <span style="color: orange;">&#x25A0;</span> Можливи приріст популяції
+                                <br> <span style="color: green;">&#x25A0;</span> Без змін
+                                <br> <span style="color: royalblue;">&#x25A0;</span> Спад популяції
+                                <br> <span style="color: lightblue;">&#x25A0;</span> Невідомо
+                            </figcaption>
+                        </figure>
+                        <figure id="jelly-main">
+                            <figcaption class="fig-title">Тихоокеанська медуза</figcaption>
+                            <img src="img/jelly_main.jpg" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section id="trivia">
+                <h2>Особливості</h2>
+                <div class="content">
+                    <div class="articles">
+                        <article id="trivia-1">
+                            <h2>Отруйність</h2>
+                            <p>
+                                Медузи оснащені нематоцистами — особливим
+                                типом клітин, здатних до укусу. При контакті
+                                з щупальцем медузи мільйони нематоцистів
+                                можуть проколоти шкіру та ввести отруту, але
+                                лише отрута деяких видів викликає негативну
+                                реакцію у людей. У дослідженні,
+                                опублікованому в журналі Communications
+                                Biology, вчені виявили вид медузи під назвою
+                                Cassiopea xamachana, яка при збудженні
+                                випускає крихітні кульки клітин, що плавають
+                                навколо медузи, жалячи все на своєму шляху.
+                                Дослідники описали їх як «самохідні
+                                мікроскопічні гранати» і назвали
+                                касіосомами.
+                            </p>
+                        </article>
+                        <article id="trivia-2">
+                            <h2>Життєвий цикл</h2>
+                            <p>
+                                Медузи мають складний життєвий цикл, у якому
+                                чергуються стадії статевого та нестатевого
+                                розмноження. Дорослі медузи — ті, що ми
+                                звикли бачити у воді — випускають у воду
+                                яйця та сперму, де запліднені яйця
+                                перетворюються на крихітних личинок, яких
+                                називають планулами. Ці личинки осідають на
+                                поверхню та перетворюються на нерухомих
+                                поліпів, які можуть розмножуватися
+                                нестатевим шляхом — брунькуванням або
+                                процесом, що називається стробіляцією, —
+                                утворюючи невеликих незрілих медуз, відомих
+                                як ефіри. Ефіри з часом дозрівають до
+                                дорослих медуз, завершуючи цикл. Деякі види
+                                можуть пропускати стадії, розмножуватися
+                                безпосередньо зі стадії медузи або навіть
+                                під впливом стресу повертатися зі стадії
+                                дорослої особини назад до стадії поліпа.
+                            </p>
+                        </article>
+                        <article id="trivia-3">
+                            <h2>Використання людьми</h2>
+                            <p>
+                                У деяких частинах світу медуз вживають у їжу
+                                вже давно. Риболовецькі підприємства почали
+                                виловлювати американську медузу-гарматну
+                                кулю (Stomolophus meleagris) уздовж
+                                південного атлантичного узбережжя Сполучених
+                                Штатів та в Мексиканській затоці для
+                                експорту до Азії. Медуз також виловлюють
+                                заради колагену, який досліджують для
+                                використання в різних сферах, зокрема для
+                                лікування ревматоїдного артриту.
+                            </p>
+                        </article>
+                    </div>
+                    <div>
+                        <figure id="life-cycle">
+                            <figcaption class="fig-title">
+                                Стадії розвитку життєвого циклу медуз класу
+                                Scyphozoa Розвиток медузи
+                            </figcaption>
+                            <img src="img/life-cycle.jpg" />
+                            <figcaption class="fig-desc">
+                                <b>1–3</b> Личинка обирає місце для осідання
+                                <br /><b>4–8</b> Розвиток поліпа <br /><b>9–11</b>
+                                Стробіляція поліпа <br /><b>12–14</b>
+                                Розвиток медузи
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section id="jelly-in-ukraine">
+                <h2>Медузи в Україні</h2>
+                <div class="content">
+                    <article>
+                        <p>
+                            Побачити різні види медуз вживу, навіть взимку,
+                            можливо в Музеї медуз. Сам музей розташований в
+                            Києв на Майдані незалежності та містить
+                            найбільшу колекцію медуз у Східній Європі.
+                        </p>
+                    </article>
+                </div>
+                <div id="mus-info">
+                    <figure id="mus-inside">
+                        <figcaption class="fig-title">Музей зсередини</figcaption>
+                        <img width="600" height="450" src="img/museum-interior.png" />
+                    </figure>
+                    <figure id="mus-map">
+                        <figcaption class="fig-title">Розташування на мапі</figcaption>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.514008701022!2d30.525819700000003!3d50.4501524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51a1c267ef%3A0x5fe32b10ff815666!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDcsINCa0LjRl9CyLCAwMTAwMQ!5e0!3m2!1suk!2sua!4v1778647314635!5m2!1suk!2sua"
+                            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer id="contacts">
+        Контактний телефон: +(38)123-456-78-90
+        <br>
+        Адреса: м. Київ вул. Київська буд. 67
+        <a style="margin-left: auto;" class="blue-button" href="#navigation">На початок</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
