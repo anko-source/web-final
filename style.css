@@ -166,7 +166,7 @@ aside {
     color: #0f172a;
 }
 
-.main {
+main {
     flex: 1;
     padding: 20px;
     background-color: white;
@@ -197,7 +197,8 @@ article {
 }
 
 .content img {
-    width: 20vw;
+    width: 100%;
+    max-width: 20vw;
 }
 
 #mus-info {
@@ -269,4 +270,91 @@ footer {
     padding: 20px;
     align-items: flex-start;
     text-align: left;
+}
+
+@media (max-width: 900px) {
+
+    /* Smaller header */
+    header {
+        height: 35vh;
+    }
+
+    .header-content {
+        font-size: 18pt;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Navigation becomes vertical */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav .blue-button,
+    nav button.blue-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Main layout stacks */
+    .layout {
+        flex-direction: column;
+    }
+
+    /* Sidebar full width */
+    aside {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .outer-list {
+        width: 100%;
+    }
+
+    /* Content stacks vertically */
+    .content {
+        flex-direction: column;
+    }
+
+    /* Figures become full width */
+    figure,
+    #mus-inside,
+    #mus-map {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Images responsive */
+    .content img,
+    figure img,
+    figure iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    /* Museum section stacks */
+    #mus-info {
+        flex-direction: column;
+    }
+
+    /* Footer vertical */
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .blue-button {
+        margin-left: 0 !important;
+        width: 100%;
+        text-align: center;
+    }
 }
